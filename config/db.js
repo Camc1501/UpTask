@@ -12,8 +12,11 @@ const { Sequelize } = require('sequelize');
 */
 
 // Option 2: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('uptasknode', 'camc', 'Camilo01', {
+const db = new Sequelize('uptasknode', 'camc', 'Camilo01', {
   host: '127.0.0.1',
   port: '3306',
-  dialect: mysql/* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
+  dialect: 'mysql' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
 });
+
+
+module.exports = db;
