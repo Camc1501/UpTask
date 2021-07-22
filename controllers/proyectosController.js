@@ -29,7 +29,11 @@ exports.nuevoProyecto = (req,res)=>{
             nombrePagina : 'Nuevo Proyecto',
             errores
         })
+    }else{
+        //No hay errores
+        //Insertar a la DB
     }
+
 }
 /*exports.nosotros = (req,res)=>{ 
     res.send('Nosotros');
